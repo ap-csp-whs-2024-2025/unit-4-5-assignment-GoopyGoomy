@@ -14,8 +14,13 @@ int main()
 
     //a list of ints named jennys with 7 elements in it
     std::vector<int> jennys = {8, 6, 7, 5, 3, 0, 9};
-    std::vector<double> foo = {3.14, 2.5}; 
-    std::vector<std::string> bar = {"hello", "darkness"};
+    std::vector<double> foo = {3.14, 2.5, 4.1, 5.5, 6.5}; 
+    std::vector<std::string> words = {"hello", "darkness". "my", "dear", "friend"};
+
+    //std::cout << words - not allowed, can't print lists on c++
+    words.push_back("it's goodie");
+    std::cout << "The list is ";
+    displayList(words);
     return 0;
 }
 
